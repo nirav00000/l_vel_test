@@ -41,6 +41,8 @@ class helloController extends Controller
     {
 
         $fruits = $fruits->get();
+
+        $fruitFactory = $fruitFactory->get();
   
         return view('wholex',compact('fruits','fruitFactory'));
     }
