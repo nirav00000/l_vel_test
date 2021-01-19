@@ -30,3 +30,14 @@ static data
 	<li>tomato(its fruite)</li>
 </ul>
 
+<hr>
+
+from factory and seeders
+
+<ul>
+@foreach ($fruitFactory as $fruit)
+<li>{{ $fruit->fruit_name }}</li>
+@endforeach
+</ul>
+<hr>
+

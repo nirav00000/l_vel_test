@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\fruits;
+use App\FruitFactory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -35,13 +36,13 @@ class helloController extends Controller
 
     //---------------laravel crud=================
 
-    public function wholex(Request $request,fruits $fruits)
+    public function wholex(Request $request,fruits $fruits, FruitFactory $fruitFactory)
 
     {
 
         $fruits = $fruits->get();
   
-        return view('wholex',compact('fruits'));
+        return view('wholex',compact('fruits','fruitFactory'));
     }
 
 
