@@ -36,6 +36,8 @@ class helloController extends Controller
 
     //---------------laravel crud=================
 
+    //---------------laravel crud=================
+
     public function wholex(Request $request,fruits $fruits, FruitFactory $fruitFactory)
 
     {
